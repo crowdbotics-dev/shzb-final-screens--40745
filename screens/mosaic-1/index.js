@@ -1,3 +1,4 @@
+import { ImageBackground } from "react-native";
 import React from "react";
 import { View, StyleSheet, ScrollView } from "react-native";
 
@@ -8,12 +9,12 @@ const Mosaic1 = () => {
           {
           /* YOUR CODE HERE */
         }
-        </View>
+        <ImageBackground style={styles.jIqazQGk} source={require("./Screenshot 2023-01-11 at 10.07.11 PM.png")} resizeMode="cover"></ImageBackground></View>
         <View style={[styles.section, styles.sectionBottom]}>
           {
           /* YOUR CODE HERE */
         }
-        </View>
+        <ImageBackground style={styles.uiiYYPsX} source={require("./Screenshot 2023-01-06 at 5.11.06 PM.png")} resizeMode="cover"></ImageBackground></View>
       </View>
     </ScrollView>;
 };
@@ -46,6 +47,21 @@ const styles = StyleSheet.create({
   textHeading1: {
     fontSize: 20,
     fontWeight: "bold"
+  },
+  jIqazQGk: {
+    width: 260,
+    height: 195,
+    position: "absolute",
+    top: 106.5,
+    left: 23.5,
+    flexDirection: "row",
+    flex: "1",
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  uiiYYPsX: {
+    width: 223,
+    height: 68
   }
 });
 export default Mosaic1;
